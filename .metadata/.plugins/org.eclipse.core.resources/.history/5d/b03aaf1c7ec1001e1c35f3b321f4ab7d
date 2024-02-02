@@ -1,0 +1,15 @@
+package com.zensar.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.zensar.entity.ErrorResponse;
+
+public class GlobalExceptionHandler {
+	
+	@ExceptionHandler(ProductNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleException(){
+		return null;
+	}
+
+}

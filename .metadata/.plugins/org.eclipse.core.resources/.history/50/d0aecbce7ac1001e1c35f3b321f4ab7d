@@ -1,0 +1,5 @@
+package com.zensar.exceptions;
+
+public class ProductNotFoundException extends RuntimeException {
+
+}

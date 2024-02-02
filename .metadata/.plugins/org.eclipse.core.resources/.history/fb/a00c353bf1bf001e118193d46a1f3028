@@ -1,0 +1,14 @@
+logging:
+  level:
+    com:
+      zensar:
+        controllers: debug
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/product_db
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

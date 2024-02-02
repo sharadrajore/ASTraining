@@ -1,0 +1,28 @@
+package com.zensar.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedQuery;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@Entity
+@NoArgsConstructor
+@NamedQuery(name = "Product.listByProductName", query = "FROM Product p where p.productName=?1")//JPQL
+public class Product {   // lombok 
+	@Id
+	@Column(name = "id")
+	private int productId;
+	@Column(name = "name")
+	private String productName;
+	@Column(name = "cost")
+	private double productCost;
+	
+	
+	
+	
+}
