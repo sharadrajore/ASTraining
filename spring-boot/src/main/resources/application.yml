@@ -15,5 +15,14 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  security:
+    user:
+      name: tom
+      password: tom@1234
+        
+server:
+ servlet:
+  context-path: /mycontext
+  
      
       

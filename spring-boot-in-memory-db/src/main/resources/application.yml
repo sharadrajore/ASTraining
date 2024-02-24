@@ -1,0 +1,25 @@
+logging:
+  level:
+    com:
+      zensar:
+        controllers: debug
+spring:
+  datasource:
+    password: root
+    url: jdbc:h2:mem:productdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        
+
+
+        
+
+  
+     
+      
